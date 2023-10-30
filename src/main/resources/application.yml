@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: demo
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:oracle:thin:@192.168.164.183:1521/trlpdb
+    username: trl
+    password: trl
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+
+logging:
+  level:
+    root: info
